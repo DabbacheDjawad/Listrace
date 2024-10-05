@@ -109,6 +109,11 @@ body{
 
 .navbar li{
     list-style-type: none;
+    transition-duration: 0.2s;
+}
+
+.navbar li:hover{
+    color: var(--red);
 }
 
 .listRace{
@@ -120,6 +125,7 @@ body{
     color: black;
     font-family: monospace !important; 
     font-size: 1.5em;
+    text-decoration: none;
 }
 
 .listRace span{
@@ -375,18 +381,19 @@ font-size: 0.9em;
 }
 
 .explore-container{
-    width: 80%;
-    margin-left: 10%;
+    max-width: 90%;
+    margin-left: 5%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 4%;
+    gap: 3%;
+    margin-top: 50px;
 }
 
 .place{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 30%;
+   flex: 0 1 30%;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid rgba(209, 209, 209, 0.213);
@@ -585,3 +592,187 @@ font-size: 0.9em;
     margin: 50px 0px 50px 0px;
 }
 
+/*end of review section*/
+
+
+/*begin of Blog section*/
+.blog-section{
+    margin-top: 100px;
+}
+
+.blog-container{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-left: 5%;
+    gap: 3%;
+    margin-top: 50px;
+}
+
+.blog{
+    box-shadow: 0 0px 10px rgba(71,71,71,.2);
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    transition-duration: 0.3s;
+}
+
+.blog:hover{
+    box-shadow: 0 0px 10px rgba(71,71,71,.9);
+    h2{
+        color: var(--red);
+    }
+}
+
+.blog h2{
+    font-size: 1.21em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.blog p{
+    color: var(--grey);
+    margin-left: 8%;
+}
+
+.blog-desc,.blog-info,.blog-lorem{
+    padding: 10px;
+}
+/*end of blog section*/
+
+
+/*begin of contacts section*/
+.contact-section{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contact-section p:first-child{
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contact-section p:nth-child(2){
+    color: #7b8088;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 28px;
+}
+
+.account{
+    margin-top: 50px;
+}
+
+.account form{
+    width: fit-content;
+}
+
+.account input{
+    height: 60px;
+    width: 630px;
+    outline: none !important;
+    border: none;
+    box-shadow: 0 0px 10px rgba(71,71,71,.2);
+    border-radius: 5px;
+    color: #a5adb3;
+    font-size: 1.15em;
+    padding-left: 40px;
+}
+
+.account button{
+    height: 58px;
+    font-size: 1.3em;
+    color: white;
+    background-color: var(--red);
+    border: none;
+    border-radius: 5px;
+}
+
+.account-container{
+    width: 100%;
+    height: 500px;
+    background-color: #eeeeee9e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer nav*/
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid var(--lightGrey);
+}
+
+.footer-nav ul{
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.footer-nav li{
+    list-style-type:none;
+    transition-duration: 0.2s;
+}
+
+.footer-nav li:hover{
+    color: var(--red);
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 1.2em;
+}
+
+
+
+.footer-cpy-icn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--grey);
+}
+
+.phone{
+    display: flex;
+    transition-duration: 0.3s;
+}
+
+.phone:hover{
+    p{
+        color: var(--red);
+    }
+    i{
+        color: var(--red);
+    }
+}
+
+.icons{
+    display: flex;
+    gap: 30px;
+    font-size: 1.5em;
+}
+
+.icons i{
+    transition-duration: 0.2s;
+}
+
+.icons i:hover{
+    color: var(--red);
+}
+
+.icns{
+    display: flex;
+    margin-right: 50px;
+    gap: 30px;
+    align-items: center;
+}
