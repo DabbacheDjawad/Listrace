@@ -1,0 +1,195 @@
+
+/*responsive design file*/
+
+@media (min-width:320px)and (max-width:900px){
+    .preHead{
+        flex-wrap: wrap;
+    }
+
+    .lang,.curr,.search-preHead,.ph-nb,.sign-in,.register{
+        border: none;
+        padding:15px 10px 15px 10px;
+    }
+
+    .nav-links {
+        display: none;
+        line-height: 50px;
+        text-align: center;
+      }
+
+      .nav-links.active {
+        display: block;
+      }
+
+      .responsive-btn{
+        display: block;
+
+      }
+
+      .header{
+        gap: 65%;
+      }
+      /*HEADER END*/
+
+
+      /*BEGIN DESCRIPTION SECTION*/
+      .bold-rep{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .bold-rep p{
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    .light-rep{
+        font-size: 1.4em;
+        text-align: start;
+        margin-left: 10%;
+    }
+
+    .mini-form{
+        font-size: 1.3em;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mini-form input{
+        height: auto;
+        position: relative;
+        top: 50px;
+    }
+
+    .mini-form i{
+        position: relative;
+        right: 10%;
+        top: 20px;
+    }
+
+    .mini-form label{
+        position: relative;
+        left: 10%;
+        top: 20px;
+    }
+
+    .mini-form-left,.mini-form-right{
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .description-section{
+        height: auto;
+    }
+
+    .mini-form-button button{
+margin-left: 40%;
+    }
+    .mini-form-button i{
+        padding: 0;
+        position: static;
+    }
+
+/*services*/
+    .services-container{
+        width: 100%;
+        margin-left: 20%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service{
+        width: 70%;
+        bottom: -30px;
+    }
+
+/*end description section*/
+
+
+
+    /*begin how it works section*/
+    .res{
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .steps-container{
+        flex-direction: column;
+    }
+    /*end how it works section*/
+
+
+        /*begin explore section*/
+    .place{
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    
+    .review{
+        display: block;
+        width: 80%;
+        margin-left:10% ;
+    }
+
+            /*end explore section*/
+
+
+
+            /*begin numbers section*/
+    .nb-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+            /*end explore section*/
+
+
+
+         /*begin blog section*/
+  .blog-container{
+   flex-direction: column;
+   width: 90%;
+   align-items: center;
+   margin-left: 5%;
+   gap: 50px;
+   }
+/*end blog section*/
+
+
+
+/*begin of contacts section*/
+.contact-section p:first-child{
+    font-size: 22px;
+}
+
+.contact-section{
+    margin-top: 100px;
+}
+
+.account input{
+    width: 90%;
+}
+
+
+
+/*footer nav*/
+.footer-cpy-icn{
+flex-wrap: wrap;
+flex: 1 1 80%;
+gap: 50px;
+text-align: center;
+}
+
+
+}
+
+@media all and (min-width:901px)and (max-width:1230px){
+    .nav-links{
+        left: 30%;
+    }
+}

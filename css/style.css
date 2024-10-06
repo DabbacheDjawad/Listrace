@@ -76,16 +76,17 @@ body{
 
 /*preHeader section End*/
 
+
+
 /*Header section begin*/
 .header{
-    display: flex;
     position: fixed;
     background-color: white;
     z-index: 1000;
     width: 100%;
-    justify-content: space-between;
     padding: 15px 0px 15px 0px;
     box-shadow: 0 0px 10px rgba(71,71,71,.3);
+    height: 85px;
 }
 
 /*for the fixed header (javascript)*/
@@ -104,20 +105,38 @@ body{
 }
 
 .navbar{
-    padding: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
 }
 
-.navbar li{
+.responsive-btn{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: inherit;
+    border: 1px solid var(--red);
+    color: var(--red);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-right: 10%;
+  }
+
+  .responsive-btn:hover{
+        transform: rotate(90deg);
+  }
+
+.nav-links li{
     list-style-type: none;
     transition-duration: 0.2s;
 }
 
-.navbar li:hover{
+.nav-links li:hover{
     color: var(--red);
 }
 
 .listRace{
-    padding: inherit;
     margin-left: 7%;
 }
 
@@ -132,10 +151,13 @@ body{
     color: var(--red); 
 }
 
-.navbar ul{
+.nav-links{
     display: flex;
     gap: 50px;
-    margin-right: 50px;
+    padding: inherit;
+    background-color: inherit;
+    animation-name: navbar;
+    animation-duration: 0.25s;
 }
 
 /*end of header section*/
