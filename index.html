@@ -11,7 +11,8 @@
 </head>
 <body>
     
-    <div class="preHead">
+
+    <section class="preHead">
 
         <!-- left side of preHead (language - currency - search bar) -->
         <div class="lang-curr-search">
@@ -56,7 +57,7 @@
                 <a href="#">Register</a>
              </div>
         </div>
-    </div>
+    </section>
 
     <nav class="header">
             <div class="navbar">
@@ -72,12 +73,12 @@
 
         </div>
         <ul id="nav-links" class="nav-links">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>How it works</li></a>
-            <a href="#"><li>Explore</li></a>
-            <a href="#"><li>Review</li></a>
-            <a href="#"><li>Blog</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="#" class="links" ind=0><li>Home</li></a>
+            <a href="#" class="links" ind=1><li>How it works</li></a>
+            <a href="#" class="links" ind=2><li>Explore</li></a>
+            <a href="#" class="links" ind=3><li>Review</li></a>
+            <a href="#" class="links" ind=4><li>Blog</li></a>
+            <a href="#" class="links" ind=5><li>Contact</li></a>
         </ul>
     </nav>
 <!-- end of header section -->
@@ -100,13 +101,13 @@
         <form class="mini-form">
             <div class="mini-form-left">
                 <label for="what">What</label>
-                <input type="text" id="what" placeholder="ex:Place , restaurant...ect">
+                <input type="text" id="what" class="inp" placeholder="ex:Place , restaurant...ect">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
             <div class="mini-form-right">
                 <label for="location">Location</label>
-                <input type="text" id="location" placeholder="ex:London , Rome...ect">
+                <input type="text" id="location" class="inp" placeholder="ex:London , Rome...ect">
                 <i class="fa-solid fa-location-crosshairs"></i>
             </div>
 
@@ -166,10 +167,10 @@
 
 
 <!-- How it works section -->
-<section>
+<section class="how-it-works-section">
     <div class="how-it-works-container">
         <h2 class="res" style="font-weight: lighter;">HOW IT WORKS</h2>
-        <p class="res" style="color: var(--grey);margin-top: 20px;">Learn More about how our website works</p>
+        <p class="res" style="color: var(--grey);margin-top: 80px;">Learn More about how our website works</p>
 
         <div class="steps-container">
 
@@ -215,13 +216,17 @@
 <section class="explore-section">
     <h2 style="font-weight: lighter;text-align: center;
     padding-top: 80px;">EXPLORE</h2>
-    <p style="color: var(--grey);margin-top: 20px;text-align: center;">Explore New place, food, culture around the world and many more</p>
+    <p class="res" style="color: var(--grey);margin-top: 20px;text-align: center;">Explore New place, food, culture around the world and many more</p>
 
         <!-- places and exploration -->
     <div class="explore-container">
         <!-- place1 -->
         <div class="place">
             <img src="images/explore/e1.jpg" alt="bar">
+             <div class="hover-items">
+                <button>Best Rated</button>
+                <i class="fa-regular fa-bookmark"></i>
+             </div>
             <span>Tommy Helfinger Bar</span>
 
             <!-- place ratings -->
@@ -241,6 +246,7 @@
 
             <div class="place-image-lorem">
                 <img src="images/clients/c1.png" alt="client">
+        
                 <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incid ut labore et dolore magna aliqua....</p>
@@ -265,6 +271,10 @@
   <!-- place2 -->
   <div class="place">
     <img src="images/explore/e2.jpg" alt="bar">
+    <div class="hover-items">
+        <button>Best Rated</button>
+        <i class="fa-regular fa-bookmark"></i>
+     </div>
     <span>Swim and Dine Resort</span>
 
     <!-- place ratings -->
@@ -310,6 +320,10 @@
   <!-- place3 -->
   <div class="place">
     <img src="images/explore/e3.jpg" alt="europe">
+    <div class="hover-items">
+        <button>Best Rated</button>
+        <i class="fa-regular fa-bookmark"></i>
+     </div>
     <span>Europe Tour</span>
 
     <!-- place ratings -->
@@ -355,6 +369,11 @@
   <!-- place4 -->
   <div class="place">
     <img src="images/explore/e4.jpg" alt="bar">
+    <div class="hover-items">
+        <button>Best Rated</button>
+        <i class="fa-regular fa-bookmark"></i>
+     </div>
+
     <span>Banglow with Swimming Pool</span>
 
     <!-- place ratings -->
@@ -399,6 +418,10 @@
   <!-- place5 -->
   <div class="place">
     <img src="images/explore/e5.jpg" alt="bar">
+    <div class="hover-items">
+        <button>Best Rated</button>
+        <i class="fa-regular fa-bookmark"></i>
+     </div>
     <span>Vintage Car Expo</span>
 
     <!-- place ratings -->
@@ -444,6 +467,10 @@
   <!-- place6 -->
   <div class="place">
     <img src="images/explore/e6.jpg" alt="bar">
+    <div class="hover-items">
+        <button>Best Rated</button>
+        <i class="fa-regular fa-bookmark"></i>
+     </div>
     <span>Thailand Tour</span>
 
     <!-- place ratings -->
@@ -493,7 +520,7 @@
 <section class="reviews-section">
 
     <h2 style="font-weight: lighter;text-align: center;">CLIENTS REVIEWS</h2>
-    <p style="color: var(--grey);margin-top: 20px;text-align: center;">
+    <p class="res" style="color: var(--grey);margin-top: 20px;text-align: center;">
         what our clients say about us
     </p>
 
@@ -549,7 +576,7 @@
 <!-- begin of  blog section-->
 <section class="blog-section">
     <h2 style="font-weight: lighter;text-align: center;">NEWS AND ARTICLES</h2>
-<p style="color: var(--grey);margin-top: 20px;text-align: center;">
+<p class="res" style="color: var(--grey);margin-top: 20px;text-align: center;">
         what our clients say about us
     </p>
 

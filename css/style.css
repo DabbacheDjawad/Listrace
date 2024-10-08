@@ -85,7 +85,7 @@ body{
     z-index: 1000;
     width: 100%;
     padding: 15px 0px 15px 0px;
-    box-shadow: 0 0px 10px rgba(71,71,71,.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     height: 85px;
 }
 
@@ -158,6 +158,9 @@ body{
     background-color: inherit;
     animation-name: navbar;
     animation-duration: 0.25s;
+    position: relative;
+    left: 50%;
+    top: -60%;
 }
 
 /*end of header section*/
@@ -225,6 +228,7 @@ body{
     height: inherit;
     font-weight: 600;
     color: var(--lightGrey);
+    font-size:0.9em;
 }
 
 .mini-form label{
@@ -329,6 +333,11 @@ font-size: 0.9em;
     gap: 20px;
     width: 80%;
     margin-left: 10%;
+    margin-top: 100px;
+}
+
+.res{
+    font-size: 1.7em;
 }
 
 .step{
@@ -421,9 +430,47 @@ font-size: 0.9em;
     border: 1px solid rgba(209, 209, 209, 0.213);
 }
 
+.hover-items button{
+    color: white;
+    background-color: var(--red);
+    border: none;
+    padding: 10px;
+    display: none;
+}
+
+.hover-items i{
+    display: none;
+    padding: 10px;
+    color: white;
+    background-color: #50616c;
+
+}
+
+.hover-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    top: -10%;
+}
+
 .place:hover{
     box-shadow: 0 0px 10px rgba(71,71,71,.5);
     transition-duration: 0.3s;
+    
+}
+
+.place:hover > .hover-items button{
+    display: block;
+    animation-name: btn-icn-popUp;
+    animation-duration: 0.3s;
+}
+
+.place:hover > .hover-items i{
+    display: block;
+    animation-name: btn-icn-popUp;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
 }
 
 .place img{

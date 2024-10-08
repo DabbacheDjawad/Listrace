@@ -4,6 +4,10 @@ const header = document.querySelector(".header");
 const navItems = document.querySelector("#nav-links");
 const responsiveBtn = document.querySelector("#responsive-btn");
 const numbers = document.querySelectorAll(".nb");
+const formInput = document.querySelectorAll(".inp");
+const links = document.querySelectorAll(".links");
+const sections = document.querySelectorAll("section");
+ 
 
 
 //object of reviewers  used in change reviewer function
@@ -94,6 +98,25 @@ responsiveBtn.addEventListener("click" , ()=>{
     }
     console.log(navItems.classList);
     
+})
+
+//function that makes the placeholder disappears when clicking on the form
+
+formInput.forEach(input=>{
+    input.addEventListener("click",()=>{
+        input.placeholder = "";
+    })
+});
+
+
+
+//function that makes you scroll to sections from the navbar
+links.forEach(link =>{
+    link.addEventListener("click" , (event)=>{
+        event.preventDefault();
+        let sectionNb = Number(link.getAttribute("ind"));
+        window.scrollTo(0,sections[sectionNb+1].offsetTop); 
+    })
 })
 
 

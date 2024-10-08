@@ -15,6 +15,8 @@
         display: none;
         line-height: 50px;
         text-align: center;
+        left: 0;
+        top: 0;
       }
 
       .nav-links.active {
@@ -192,4 +194,18 @@ text-align: center;
     .nav-links{
         left: 30%;
     }
+
+    .services-container{
+        width: 100%;
+        margin-left: 20%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service{
+        width: 70%;
+        bottom: -30px;
+    }
+
+
 }
